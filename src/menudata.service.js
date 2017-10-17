@@ -17,9 +17,9 @@
 		service.getItemsForCategory = function(categoryShortName) {
 			// append categoryShortName to the url
 			var response = $http({
-				url : ' https://davids-restaurant.herokuapp.com/menu_items.json?category=',
+				url : ' https://davids-restaurant.herokuapp.com/menu_items.json',
 				params : {
-					param : categoryShortName
+					category : categoryShortName
 				}
 			});
 			return response;
