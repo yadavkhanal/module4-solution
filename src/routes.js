@@ -19,7 +19,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
   })
   .state('categories', {
     url: '/categories',
-    templateUrl: 'src/categories/categories.template.html',
+    templateUrl: 'src/templates/categories.template.html',
     //controller: 'CategoriesController as ctrlCat',
 /*	 resolve : {
 				items : [ 'ShoppingListService', function(ShoppingListService) {

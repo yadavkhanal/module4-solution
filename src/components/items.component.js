@@ -1,6 +1,6 @@
 (function(){
 	'use strict';
-	angular.module('MenuApp')
+	angular.module('data')
 	.component('items',{
 		templateUrl:'items.template.html',
 		controller:ItemsComponentController,
@@ -8,7 +8,7 @@
 			categoryShortName:'<'
 		}
 	});
-	ItemsComponetController.$inject = ['MenuDataService'];
+	//ItemsComponentController.$inject = ['MenuDataService'];
 	function ItemsComponentController(MenuDataService){
 		var $ctrl = this;
 		$ctrl.getItemsForCategory = function(){

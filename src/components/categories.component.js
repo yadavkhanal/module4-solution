@@ -1,6 +1,6 @@
 (function(){
 	'use strict';
-	angular.module('MenuApp')
+	angular.module('data')
 	.component('categories',{
 		templateUrl:'categories.template.html',
 		controller:CategoriesComponentController,
@@ -10,7 +10,7 @@
 	});
 	
 	CategoriesComponentController.$inject = ['MenuDataService'];
-	function CategoriesComponentController(MenuDataService){
+	function CategoriesComponentController(){
 		var $ctrl = this;
 		$ctrl.getAllCategories = function(){
 			MenuDataService.getAllCategories().then(function(response){				 
