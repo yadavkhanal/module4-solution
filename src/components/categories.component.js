@@ -9,8 +9,8 @@
 		}
 	});
 	
-	CategoriesComponentController.$inject = [MenuDataService];
-	function CategoriesComponentController(){
+	CategoriesComponentController.$inject = ['MenuDataService'];
+	function CategoriesComponentController(MenuDataService){
 		var $ctrl = this;
 		$ctrl.getAllCategories = function(){
 			MenuDataService.getAllCategories().then(function(response){				 
