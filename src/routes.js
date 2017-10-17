@@ -20,12 +20,12 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
   .state('categories', {
     url: '/categories',
     templateUrl: 'src/templates/categories.template.html',
-    controller: 'CategoriesComponentController as $ctrl'
-/*	 resolve : {
-				items : [ 'ShoppingListService', function(ShoppingListService) {
-					return ShoppingListService.getItems();
+    controller: 'CategoriesComponentController as $ctrl',
+	 resolve : {
+				items : [ 'MenuDataService', function(MenuDataService) {
+					return MenuDataService.getAllCategories();
 				} ]
-			}*/
+			}
   })
 
   // Item detail
