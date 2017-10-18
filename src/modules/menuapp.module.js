@@ -1,8 +1,7 @@
 (function() {
 	'use strict';
 
-	angular.module('MenuApp', ['ui.router','data']);	
-	angular.module('MenuApp')
+	angular.module('MenuApp', ['ui.router','data'])
 	.config(function () {
 	  console.log("MenuApp config fired.");
 	}).
